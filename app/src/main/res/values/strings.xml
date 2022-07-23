@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">加密通话（基于Base64）</string>
+    <string name="encode">编码</string>
+    <string name="decode">解码</string>
+    <string name="settings">设置</string>
+    <string name="trancelate">翻译文字</string>
+    <string name="decode_hint">请输入你要解码的base64字段</string>
+    <string name="encode_hint">请输入你要编码的base64字段</string>
+    <string name="attachment_summary_on">点击以关闭文字翻译</string>
+    <string name="attachment_summary_off">点击以启用文字翻译</string>
+    <string name="messages_header">翻译</string>
+    <string name="about">关于</string>
+    <string name="english" translatable="false">英语</string>
+    <string name="japanese" translatable="false">日语</string>
+    <string name="russian" translatable="false">俄语</string>
+    <string name="lang" translatable="false">已选择的语言</string>
+    <string name="dialogTitle" translatable="false">选择语言</string>
+    <string name="useless_msg" translatable="false">没用的东西</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="clip_title" translatable="false">复制解码内容到剪切板</string>
+    <string name="clip_decode" translatable="false">已复制解码内容到剪切板</string>
+    <string name="clip_encode" translatable="false">已复制编码内容到剪切板</string>
+    <string name="clip_translate" translatable="false">已复制翻译内容到剪切板</string>
+    <string name="clip" translatable="false">复制解码内容</string>
+    <string name="decode_fail" translatable="false">解码失败！</string>
+    <string name="decode_after" translatable="false">解码后为:</string>
+    <string name="translate_after" translatable="false">翻译后的文字:</string>
+    <string name="ogText" translatable="false">原文是:</string>
+    <string name="encode_atfer" translatable="false">编码后为:</string>
+    <string name="clip_summary_on" translatable="false">点击以关闭复制解码到剪切板</string>
+    <string name="clip_summary_off" translatable="false">点击以启用复制解码到剪切板</string>
+    <string name="dcolor_summary_off" translatable="false">点击以启用动态取色</string>
+    <string name="dcolor_summary_on" translatable="false">点击以关闭动态取色</string>
+    <string name="dcolor_title" translatable="false">动态取色</string>
+    <string name="dcolor_message" translatable="false">动态取色将在重启后生效</string>
+    <string name="dcolor_ok" translatable="false">确定</string>
+    <string name="dcolor_alert" translatable="false">你的Android版本低于Android 12！</string>
+    <string name="dcolor_alert_ver" translatable="false">(低于Android 12)</string>
+</resources>

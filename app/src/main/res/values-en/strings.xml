@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Encrypted call（Based on Base64）</string>
+    <string name="encode">Encoding</string>
+    <string name="decode">Decoding</string>
+    <string name="settings">Settings</string>
+    <string name="trancelate">Translate</string>
+    <string name="decode_hint">Please input basee64 that be decoded</string>
+    <string name="encode_hint">Please input basee64 that be encoded</string>
+    <string name="attachment_summary_on">Click to disable translate</string>
+    <string name="attachment_summary_off">Click to enable translate</string>
+    <string name="messages_header">Translate</string>
+    <string name="about">About</string>
+    <string name="english" translatable="false">English</string>
+    <string name="japanese" translatable="false">Japanese</string>
+    <string name="russian" translatable="false">Russian</string>
+    <string name="lang" translatable="false">Selected language</string>
+    <string name="dialogTitle" translatable="false">Select language</string>
+    <string name="useless_msg" translatable="false">Useless thing</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="clip_title" translatable="false">Copy decode content to ClipBoard</string>
+    <string name="clip_decode" translatable="false">Copied decoded content to ClipBoard</string>
+    <string name="clip_encode" translatable="false">Copied encoded content to ClipBoard</string>
+    <string name="clip_translate" translatable="false">Copied translated content to ClipBoard</string>
+    <string name="clip" translatable="false">Copy decoded content</string>
+    <string name="decode_fail" translatable="false">Decode fail!</string>
+    <string name="decode_after" translatable="false">Decoded content</string>
+    <string name="translate_after" translatable="false">Translated content:</string>
+    <string name="ogText" translatable="false">Orginal Text:</string>
+    <string name="encode_atfer" translatable="false">Encoded content:</string>
+    <string name="clip_summary_on" translatable="false">Click to disable Copy decode content to ClipBoard</string>
+    <string name="clip_summary_off" translatable="false">Click to disable Copy decode content to ClipBoard</string>
+    <string name="dcolor_summary_off" translatable="false">Click to disable Dynamic Color</string>
+    <string name="dcolor_summary_on" translatable="false">Click to enable Dynamic Color</string>
+    <string name="dcolor_title" translatable="false">Dynamic Color</string>
+    <string name="dcolor_message" translatable="false">Dynamic Color will be availabled after rebooted</string>
+    <string name="dcolor_ok" translatable="false">OK</string>
+    <string name="dcolor_alert" translatable="false">Your Android Version is be lower than Android 12!</string>
+    <string name="dcolor_alert_ver" translatable="false">(Be lower than Android 12)</string>
+</resources>

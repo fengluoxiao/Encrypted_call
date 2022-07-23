@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/dcolor_title">
+        <SwitchPreferenceCompat
+            android:id="@+id/dcolor"
+            app:key="dcolor"
+            app:summaryOff="@string/dcolor_summary_off"
+            app:summaryOn="@string/dcolor_summary_on"
+            app:title="@string/dcolor_title"
+            android:defaultValue="false"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/messages_header">
+        <SwitchPreferenceCompat
+            android:id="@+id/translate"
+            app:key="translate"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/trancelate" />
+        <ListPreference
+            android:id="@+id/translate_list"
+            app:key="translate_list"
+            android:title="@string/lang"
+            android:dialogTitle="@string/dialogTitle"
+            android:entries="@array/list_entry"
+            android:entryValues="@array/list_entry_val" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/clip">
+        <SwitchPreferenceCompat
+            android:id="@+id/clip"
+            app:key="clip"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/clip_summary_on"
+            app:title="@string/clip_title" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/about">
+        <Preference
+            app:key="about_sss"
+            android:title="@string/about" />
+    </PreferenceCategory>
+</PreferenceScreen>

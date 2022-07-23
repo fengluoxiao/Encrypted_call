@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".encoding">
+    <item android:title="@string/encode"  android:id="@+id/encode">
+
+    </item>
+
+    <item android:title="@string/decode"  android:id="@+id/decode">
+
+    </item>
+
+    <item android:title="@string/settings"  android:id="@+id/settings">
+
+    </item>
+
+</menu>

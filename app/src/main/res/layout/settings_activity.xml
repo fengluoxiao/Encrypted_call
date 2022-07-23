@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:paddingTop="5dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/m_tb"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-15dp"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginBottom="50dp"
+            app:expandedTitleMarginEnd="120dp"
+            app:expandedTitleMarginStart="35dp"
+            app:expandedTitleTextAppearance="@style/t_s"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="exitUntilCollapsed|snapMargins"
+            app:title="@string/app_name">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="10dp"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
