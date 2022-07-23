@@ -7,38 +7,31 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  apk:
+    name: Generate Apk
     runs-on: ubuntu-latest
-
     steps:
-   
-    
       - uses: actions/checkout@v2
       - name: set up JDK 11
         uses: actions/setup-java@v2
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Release APK
-        # You may pin to the exact commit or the version.
-        # uses: ShowMeThe/github_action_release@c03188563c3286ccd20cf0d2b1413a134e3cabc9
-        uses: ShowMeThe/github_action_release@v0.01
-        with:
-          # Github secret token to allow automated publishing of APK to release.
-          GITHUB_TOKEN: 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
-
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew assembleRelease
-
       - uses: actions/upload-artifact@v3.1.0
         with:
           name: upload-apk
           path: 
             ${{github.workspace}}/app/build/outputs/apk/release/*.apk
-            
-    
+      - uses: toolmantim/release-drafter@v5.2.0
+        name: Draft
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+     
+
+
       
