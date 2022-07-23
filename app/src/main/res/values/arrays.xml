@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="list_entry">
+        <item>@string/english</item>
+        <item>@string/japanese</item>
+        <item>@string/russian</item>
+    </string-array>
+    <string-array name="list_entry_val">
+        <item>en</item>
+        <item>jp</item>
+        <item>ru</item>
+    </string-array>
+</resources>
