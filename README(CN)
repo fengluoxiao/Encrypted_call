@@ -1,0 +1,23 @@
+# Encrypted_call（中文）
+
+[英文版本](https://gitee.com/fengluoxiao/Encrypted_call/blob/main/README(EN).md)
+
+#### 介绍
+基于Base64加密可实时翻译的小玩具
+
+
+
+#### 内容
+
+1.  基于百度翻译通用API进行实时翻译（可调整设置）
+2.  动态取色（需要Android 12或以上系统）
+3.  点击翻译后的或者解码后的文字复制到剪切板（编码只有编码后的文字能编译）
+4.  有英语，日语，俄语翻译
+
+
+
+#### 感谢
+
+1.  [zackratos的UltimateBarX](https://gitee.com/zackratos/UltimateBarX)
+
+
