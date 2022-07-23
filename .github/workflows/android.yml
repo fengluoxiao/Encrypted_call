@@ -12,12 +12,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+   
+    
       - uses: actions/checkout@v2
       - name: set up JDK 11
         uses: actions/setup-java@v2
         with:
           java-version: '11'
           distribution: 'adopt'
+
+
+      - name: Release APK Publisher v2
+        uses: vdesmond/action-release-apk@1.0.5
+        with:
+              GITHUB_TOKEN: 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
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -30,8 +38,5 @@ jobs:
           path: 
             ${{github.workspace}}/app/build/outputs/apk/release/*.apk
             
-          uses: yakuhzi/release-asset@v1.2.3
-          file:
-           ${{github.workspace}}/app/build/outputs/apk/release/*.apk
-          
+    
       
