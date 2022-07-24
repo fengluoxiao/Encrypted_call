@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigations"
+    app:startDestination="@+id/navigation_encoding">
+
+    <fragment
+        android:id="@+id/navigation_encoding"
+        android:name="com.flx.encryptioncall.EncodingFragment"
+        android:label="encoding"
+        tools:layout="@layout/fragment_encoding" />
+    <fragment
+        android:id="@+id/navigation_decoding"
+        android:name="com.flx.encryptioncall.DecodingFragment"
+        android:label="decoding"
+        tools:layout="@layout/fragment_decoding" />
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.flx.encryptioncall.SettingsFragment"
+        android:label="sss"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
