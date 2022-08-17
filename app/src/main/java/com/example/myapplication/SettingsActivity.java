@@ -54,7 +54,7 @@ public class SettingsActivity extends AppCompatActivity {
             Preference about = findPreference("about_sss");
             Preference dcolor = findPreference("dcolor");
             listPreference = findPreference("translate_list");
-           if(Build.VERSION.SDK_INT > Build.VERSION_CODES.S) {
+           if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2) {
                dcolor.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                    @Override
                    public boolean onPreferenceClick(Preference preference) {
@@ -76,7 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
            } else {
                SwitchPreferenceCompat switchPreferenceCompat = findPreference("dcolor");
                switchPreferenceCompat.setSummaryOn(switchPreferenceCompat.getSummaryOn()+ (String)getText(R.string.dcolor_alert_ver));
-               switchPreferenceCompat.setSummaryOff(switchPreferenceCompat.getSummaryOn()+ (String)getText(R.string.dcolor_alert_ver));
+               switchPreferenceCompat.setSummaryOff(switchPreferenceCompat.getSummaryOff()+ (String)getText(R.string.dcolor_alert_ver));
                dcolor.setEnabled(false);
            }
             listPreference.setOnPreferenceChangeListener(this);
@@ -85,6 +85,8 @@ public class SettingsActivity extends AppCompatActivity {
                 listPreference.setEnabled(false);
             } else {
                 listPreference.setEnabled(true);
+                CharSequence[] values = listPreference.getEntries();
+                listPreference.setDefaultValue(values[0]);
             }
             trancelate.setDefaultValue(false);
             if(trancelate != null) {
@@ -106,7 +108,10 @@ public class SettingsActivity extends AppCompatActivity {
             boolean ss = (boolean) newValue;
             listPreference = findPreference("translate_list");
             if(key.equals("translate") && ss == true ) {
+                CharSequence[] values = listPreference.getEntries();
+                listPreference.setDefaultValue(values[0]);
                 listPreference.setEnabled(true);
+
             } else {
                 listPreference.setEnabled(false);
             }

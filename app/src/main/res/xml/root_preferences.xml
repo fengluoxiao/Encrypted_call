@@ -32,7 +32,7 @@
         <SwitchPreferenceCompat
             android:id="@+id/clip"
             app:key="clip"
-            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOff="@string/clip_summary_off"
             app:summaryOn="@string/clip_summary_on"
             app:title="@string/clip_title" />
 

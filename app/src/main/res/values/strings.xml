@@ -21,19 +21,19 @@
     <string name="clip_decode" translatable="false">已复制解码内容到剪切板</string>
     <string name="clip_encode" translatable="false">已复制编码内容到剪切板</string>
     <string name="clip_translate" translatable="false">已复制翻译内容到剪切板</string>
-    <string name="clip" translatable="false">复制解码内容</string>
+    <string name="clip" translatable="false">复制编码内容</string>
     <string name="decode_fail" translatable="false">解码失败！</string>
     <string name="decode_after" translatable="false">解码后为:</string>
     <string name="translate_after" translatable="false">翻译后的文字:</string>
     <string name="ogText" translatable="false">原文是:</string>
     <string name="encode_atfer" translatable="false">编码后为:</string>
-    <string name="clip_summary_on" translatable="false">点击以关闭复制解码到剪切板</string>
-    <string name="clip_summary_off" translatable="false">点击以启用复制解码到剪切板</string>
+    <string name="clip_summary_on" translatable="false">点击以关闭复制编码内容码到剪切板</string>
+    <string name="clip_summary_off" translatable="false">点击以启用复制编码内容到剪切板</string>
     <string name="dcolor_summary_off" translatable="false">点击以启用动态取色</string>
     <string name="dcolor_summary_on" translatable="false">点击以关闭动态取色</string>
     <string name="dcolor_title" translatable="false">动态取色</string>
     <string name="dcolor_message" translatable="false">动态取色将在重启后生效</string>
     <string name="dcolor_ok" translatable="false">确定</string>
-    <string name="dcolor_alert" translatable="false">你的Android版本低于Android 12！</string>
-    <string name="dcolor_alert_ver" translatable="false">(低于Android 12)</string>
+    <string name="dcolor_alert" translatable="false">你的Android版本有误</string>
+    <string name="dcolor_alert_ver" translatable="false">(低于Android 12.1)</string>
 </resources>

@@ -35,13 +35,12 @@ public class MainActivity extends AppCompatActivity{
         SharedPreferences sp = getSharedPreferences("com.example.myapplication_preferences", Context.MODE_PRIVATE);
         boolean dcolor = sp.getBoolean("dcolor", Boolean.parseBoolean(""));
         if(dcolor == true) {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-                DynamicColors.applyToActivitiesIfAvailable(this.getApplication());
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2) {
+                DynamicColors.applyToActivitiesIfAvailable(getApplication());
             }
             } else {
                 DynamicColors.applyToActivitiesIfAvailable(getApplication(),R.style.Theme_MyApplication);
             }
-        Log.e("boadshi", String.valueOf(dcolor));
         Intent intent = new Intent(getApplicationContext(),encoding.class);
         startActivity(intent);
         finish();

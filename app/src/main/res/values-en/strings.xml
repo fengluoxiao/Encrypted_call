@@ -35,6 +35,6 @@
     <string name="dcolor_title" translatable="false">Dynamic Color</string>
     <string name="dcolor_message" translatable="false">Dynamic Color will be availabled after rebooted</string>
     <string name="dcolor_ok" translatable="false">OK</string>
-    <string name="dcolor_alert" translatable="false">Your Android Version is be lower than Android 12!</string>
-    <string name="dcolor_alert_ver" translatable="false">(Be lower than Android 12)</string>
+    <string name="dcolor_alert" translatable="false">Your Android Version is not allow it</string>
+    <string name="dcolor_alert_ver" translatable="false">(Be lower than Android 12.1)</string>
 </resources>
